@@ -18,3 +18,20 @@ public:
         return min(mi,ni);
     }
 };
+
+
+// 100% Fastest Solution:
+class Solution {
+public:
+    int trailingZeroes(int n) {
+        int mi=0;
+        for (int i=5; i<=n; i+=5){
+            int x=i;
+            while (x%5==0){
+                x= x/5;
+                mi++;
+            }
+        }
+        return mi;
+    }
+};
