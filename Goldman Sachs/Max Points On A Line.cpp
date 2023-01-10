@@ -1,7 +1,7 @@
 class Solution {
 public:
 // contraints are small so,
-// take any two points that yes, i want to pass the points through this line only
+// take any two points and then we want to pass the points through this line only
 // and then check how many points satify it
     int maxPoints(vector<vector<int>>& points) {
         int ans=2;
